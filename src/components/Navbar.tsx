@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@/assets/flashclip-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,11 +26,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-neon group-hover:glow-neon-strong transition-all duration-300">
-              <span className="text-xl font-bold text-background">FC</span>
-            </div>
-            <span className="text-xl font-bold">
+          <Link to="/" className="flex items-center gap-3 group">
+            <img 
+              src={logoImage} 
+              alt="FlashClip Logo" 
+              className="h-10 w-auto transition-all duration-300 group-hover:brightness-125 group-hover:-translate-y-0.5 drop-shadow-[0_0_8px_rgba(0,209,255,0.5)] group-hover:drop-shadow-[0_0_16px_rgba(0,209,255,0.8)]"
+            />
+            <span className="text-xl font-bold hidden sm:inline-block">
               Flash<span className="text-primary">Clip</span>
             </span>
           </Link>

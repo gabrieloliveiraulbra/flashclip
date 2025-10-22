@@ -87,6 +87,10 @@ All colors MUST be HSL.
     box-shadow: 0 0 30px hsl(188 95% 45% / 0.8), 0 0 60px hsl(188 95% 45% / 0.4);
   }
 
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
   .text-gradient {
     background: linear-gradient(135deg, hsl(188 95% 45%), hsl(217 91% 60%));
     -webkit-background-clip: text;

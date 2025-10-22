@@ -1,4 +1,5 @@
 import { Instagram, Youtube } from "lucide-react";
+import logoImage from "@/assets/flashclip-logo.png";
 
 const Footer = () => {
   const socialLinks = [
@@ -27,7 +28,15 @@ const Footer = () => {
   return (
     <footer className="bg-card border-t border-border mt-20">
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <img 
+              src={logoImage} 
+              alt="FlashClip" 
+              className="h-8 w-auto opacity-80"
+            />
+          </div>
           {/* Copyright */}
           <div className="text-sm text-muted-foreground text-center md:text-left">
             <p>© 2025 FlashClip. Todos os direitos reservados.</p>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Countdown from "@/components/Countdown";
 import { Award, BookOpen, Clock, Users } from "lucide-react";
+import logoImage from "@/assets/flashclip-logo.png";
 
 const Home = () => {
   const courses = [
@@ -52,9 +53,23 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
-        <div className="container mx-auto text-center">
-          <h1 className="text-gradient mb-6 animate-fade-in">FlashClip</h1>
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden">
+        {/* Starry background effect */}
+        <div className="absolute inset-0 opacity-30 pointer-events-none">
+          <div className="absolute top-20 left-1/4 w-1 h-1 bg-white rounded-full animate-pulse"></div>
+          <div className="absolute top-40 right-1/3 w-1 h-1 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute top-60 left-1/2 w-0.5 h-0.5 bg-white rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-32 right-1/4 w-1 h-1 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        </div>
+        
+        <div className="container mx-auto text-center relative z-10">
+          <div className="mb-8 flex justify-center animate-fade-in">
+            <img 
+              src={logoImage} 
+              alt="FlashClip Logo" 
+              className="h-48 md:h-64 w-auto drop-shadow-[0_0_30px_rgba(0,209,255,0.6)] hover:drop-shadow-[0_0_50px_rgba(0,209,255,0.8)] transition-all duration-500 animate-pulse-slow"
+            />
+          </div>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12">
             Conecte-se ao futuro da programação
           </p>
@@ -84,7 +99,7 @@ const Home = () => {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            📍 Local: Ulbra Palmas, TO | 📅 Data: 07/06 às 14h
+            📍 Local: Ulbra Palmas, TO | 📅 Data: 28/11/2025 às 14h
           </p>
         </div>
       </section>
