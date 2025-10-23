@@ -3,46 +3,34 @@ import { GraduationCap } from "lucide-react";
 
 const Instrutores = () => {
   const instructors = [
-    {
-      name: "Prof. João Silva",
-      course: "Desvendando a lógica com Prolog",
-      bio: "Doutor em Ciência da Computação com especialização em Programação Lógica",
-    },
-    {
-      name: "Dra. Maria Santos",
-      course: "Desvendando a lógica com Prolog",
-      bio: "Professora e pesquisadora em Inteligência Artificial há 15 anos",
-    },
-    {
-      name: "Prof. Carlos Oliveira",
-      course: "Python para Iniciantes",
-      bio: "Especialista em Python com mais de 10 anos de experiência em desenvolvimento",
-    },
-    {
-      name: "Prof. Ana Paula",
-      course: "Programação em C++",
-      bio: "Engenheira de Software com foco em sistemas de alto desempenho",
-    },
-    {
-      name: "MSc. Roberto Lima",
-      course: "Programação em C++",
-      bio: "Mestre em Computação e desenvolvedor de jogos AAA",
-    },
-    {
-      name: "Prof. Pedro Costa",
-      course: "JavaScript Essencial",
-      bio: "Full-stack developer e instrutor de desenvolvimento web",
-    },
-    {
-      name: "Dra. Juliana Ferreira",
-      course: "Banco de Dados com SQL",
-      bio: "Doutora em Sistemas de Informação e especialista em Big Data",
-    },
-    {
-      name: "Prof. Lucas Mendes",
-      course: "Controle de Versão com Git",
-      bio: "DevOps engineer e evangelista de boas práticas de desenvolvimento",
-    },
+    { name: "JOÃO VITOR ARAUJO", course: "C++" },
+    { name: "EDOARDO", course: "C++" },
+    { name: "GUILHERME MOREIRA", course: "C++" },
+    { name: "ARTUR MURADA", course: "C++" },
+    { name: "NICOLLAS", course: "C++" },
+    { name: "VINICIUS FELIPE", course: "C++" },
+    { name: "LUIZ ARTHUR", course: "JavaScript" },
+    { name: "GUILHERME MOTTA", course: "JavaScript" },
+    { name: "GABRIEL LOPES", course: "JavaScript" },
+    { name: "MATHEUS CARVALHO", course: "JavaScript" },
+    { name: "THIAGO SILVA", course: "JavaScript" },
+    { name: "SAMUEL ABADE", course: "JavaScript" },
+    { name: "GABRIEL", course: "Elixir" },
+    { name: "KARINY FERREIRA", course: "Elixir" },
+    { name: "FELIPE SOUSA", course: "Elixir" },
+    { name: "ANA CAROLINA", course: "Elixir" },
+    { name: "LARISSA", course: "Elixir" },
+    { name: "DEBORAH", course: "Elixir" },
+    { name: "LUCAS LEAL", course: "PHP" },
+    { name: "JONAS", course: "PHP" },
+    { name: "IGOR", course: "PHP" },
+    { name: "SAMUEL MATSUKAMI", course: "PHP" },
+    { name: "EDUARDO", course: "PHP" },
+    { name: "ANA LARESSA", course: "Prolog" },
+    { name: "TAYLANNE", course: "Prolog" },
+    { name: "JOAO PEDRO", course: "Prolog" },
+    { name: "DANIEL MARTINS", course: "Prolog" },
+    { name: "RODRIGO FOLHA", course: "Prolog" },
   ];
 
   return (
@@ -67,11 +55,9 @@ const Instrutores = () => {
 
               <h3 className="text-lg font-bold mb-2">{instructor.name}</h3>
               
-              <div className="text-xs font-medium px-3 py-1 rounded-full bg-primary/20 text-primary inline-block mb-3">
+              <div className="text-xs font-medium px-3 py-1 rounded-full bg-primary/20 text-primary inline-block">
                 {instructor.course}
               </div>
-
-              <p className="text-sm text-muted-foreground">{instructor.bio}</p>
             </Card>
           ))}
         </div>
