@@ -122,7 +122,7 @@ const Patrocinadores = () => {
           {filteredSponsors.map((sponsor, index) => (
             <Card
               key={index}
-              className="p-6 hover:border-primary hover:glow-neon transition-all duration-300"
+              className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
             >
               <div className="flex flex-col h-full">
                 <div className="text-6xl mb-4 text-center">{sponsor.logo}</div>

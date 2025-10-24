@@ -47,7 +47,7 @@ const Instrutores = () => {
           {instructors.map((instructor, index) => (
             <Card
               key={index}
-              className="p-6 hover:border-primary hover:glow-neon transition-all duration-300 text-center"
+              className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300 text-center"
             >
               <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-secondary mx-auto mb-4 flex items-center justify-center glow-neon">
                 <GraduationCap size={40} className="text-background" />

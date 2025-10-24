@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Countdown from "@/components/Countdown";
 import { Award, BookOpen, Clock, Users } from "lucide-react";
-import logoImage from "@/assets/flashclip-logo.png";
+import { LogoFlashClip } from "@/components/LogoFlashClip";
+import { StarryBackground } from "@/components/StarryBackground";
 
 const Home = () => {
   const courses = [
@@ -51,24 +52,19 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <StarryBackground />
+      
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 relative overflow-hidden">
-        {/* Starry background effect */}
-        <div className="absolute inset-0 opacity-30 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-1 h-1 bg-white rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-1/3 w-1 h-1 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-          <div className="absolute top-60 left-1/2 w-0.5 h-0.5 bg-white rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-32 right-1/4 w-1 h-1 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        {/* Constellation halo effect */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="w-96 h-96 rounded-full bg-primary/5 blur-3xl animate-pulse-slow"></div>
         </div>
         
         <div className="container mx-auto text-center relative z-10">
           <div className="mb-8 flex justify-center animate-fade-in">
-            <img 
-              src={logoImage} 
-              alt="FlashClip Logo" 
-              className="h-48 md:h-64 w-auto drop-shadow-[0_0_30px_rgba(0,209,255,0.6)] hover:drop-shadow-[0_0_50px_rgba(0,209,255,0.8)] transition-all duration-500 animate-pulse-slow"
-            />
+            <LogoFlashClip variant="icon" size="xl" className="drop-shadow-[0_0_40px_rgba(109,74,255,0.8)]" />
           </div>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12">
             Conecte-se ao futuro da programação
@@ -131,7 +127,7 @@ const Home = () => {
               return (
                 <Card
                   key={index}
-                  className="p-6 hover:border-primary hover:glow-neon transition-all duration-300"
+                  className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
                     <Icon className="text-primary" size={24} />
@@ -155,7 +151,7 @@ const Home = () => {
             {courses.map((course) => (
               <Card
                 key={course.id}
-                className="p-6 hover:border-primary hover:glow-neon transition-all duration-300"
+                className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
               >
                 <div className="text-5xl mb-4">{course.icon}</div>
                 <h3 className="text-xl font-bold mb-2">{course.title}</h3>

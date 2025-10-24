@@ -75,7 +75,7 @@ const Cursos = () => {
           {courses.map((course) => (
             <Card
               key={course.id}
-              className="p-6 hover:border-primary hover:glow-neon transition-all duration-300"
+              className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
             >
               <div className="flex items-start justify-between mb-4">
                 <span className="text-5xl">{course.icon}</span>
@@ -84,10 +84,12 @@ const Cursos = () => {
                 </span>
               </div>
 
-              <h3 className="text-xl font-bold mb-2">{course.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                {course.description}
-              </p>
+              <div className="card-uniform-content">
+                <h3 className="text-xl font-bold mb-2">{course.title}</h3>
+                <p className="text-sm text-muted-foreground mb-4 flex-1">
+                  {course.description}
+                </p>
+              </div>
 
               <div className="space-y-2 mb-4 text-sm">
                 <div className="flex items-center gap-2 text-muted-foreground">
