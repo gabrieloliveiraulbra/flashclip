@@ -8,7 +8,7 @@ interface TimeLeft {
 }
 
 const Countdown = () => {
-  const targetDate = new Date("2025-11-28T14:00:00-03:00").getTime();
+  const targetDate = new Date("2025-11-22T14:00:00-03:00").getTime();
 
   const calculateTimeLeft = (): TimeLeft | null => {
     const difference = targetDate - new Date().getTime();
@@ -39,7 +39,7 @@ const Countdown = () => {
     return (
       <div className="text-center">
         <p className="text-2xl font-bold text-gradient mb-4">
-          Evento em andamento — FlashClip 28/11/2025
+          Evento em andamento — FlashClip 22/11/2025
         </p>
       </div>
     );
