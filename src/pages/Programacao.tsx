@@ -5,38 +5,34 @@ const Programacao = () => {
   const schedule = [
     {
       time: "14:00",
-      duration: "10 min",
-      title: "Abertura do Evento",
-      description: "Boas-vindas e apresentação da programação",
-      location: "Auditório Principal",
+      duration: "80 minutos",
+      title: "Início dos Cursos",
+      description:
+        "Início dos cursos, com apresentação dos patrocinadores e a programação geral.",
+      location: "Labins",
     },
     {
-      time: "14:10",
-      duration: "80 min",
-      title: "Início dos Cursos - Módulo 1",
-      description: "Primeira sessão de todos os cursos oferecidos",
-      location: "Laboratórios de Informática",
+      time: "15:20",
+      duration: "10 minutos",
+      title: "Intervalo",
+      description:
+        "Intervalo de 10 minutos, para ir ao banheiro e tomar água.",
+      location: "",
     },
     {
       time: "15:30",
-      duration: "20 min",
+      duration: "55 minutos",
+      title: "Retorno às Salas",
+      description: "Retornar ao labin para a conclusão dos cursos.",
+      location: "Labins",
+    },
+    {
+      time: "16:25",
+      duration: "35 minutos",
       title: "Coffee-break",
-      description: "Intervalo com café, lanches e networking",
-      location: "Saguão Principal",
-    },
-    {
-      time: "15:50",
-      duration: "80 min",
-      title: "Continuação dos Cursos - Módulo 2",
-      description: "Segunda sessão com aprofundamento prático",
-      location: "Laboratórios de Informática",
-    },
-    {
-      time: "17:10",
-      duration: "20 min",
-      title: "Encerramento e Certificados",
-      description: "Encerramento oficial e entrega dos certificados digitais",
-      location: "Auditório Principal",
+      description:
+        "Finalização dos cursos com coffee-break para os participantes.",
+      location: "",
     },
   ];
 
@@ -46,7 +42,7 @@ const Programacao = () => {
         <div className="text-center mb-12">
           <h1 className="text-gradient mb-4">Programação do Evento</h1>
           <p className="text-xl text-muted-foreground">
-            Confira a agenda completa do FlashClip
+            Confira a agenda completa do Bem Viver
           </p>
         </div>
 
@@ -79,10 +75,12 @@ const Programacao = () => {
                           <Clock size={16} className="text-primary" />
                           <span>{item.duration}</span>
                         </div>
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <MapPin size={16} className="text-primary" />
-                          <span>{item.location}</span>
-                        </div>
+                        {item.location && (
+                          <div className="flex items-center gap-2 text-muted-foreground">
+                            <MapPin size={16} className="text-primary" />
+                            <span>{item.location}</span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -98,10 +96,6 @@ const Programacao = () => {
           </h3>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>• Chegue com pelo menos 15 minutos de antecedência</li>
-            <li>
-              • Traga seu notebook (computadores do laboratório disponíveis)
-            </li>
-            <li>• Certificados serão enviados por e-mail após o evento</li>
             <li>• Coffee-break e materiais inclusos na inscrição</li>
           </ul>
         </div>

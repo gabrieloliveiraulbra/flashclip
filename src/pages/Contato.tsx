@@ -169,7 +169,7 @@ const Contato = () => {
               <h3 className="text-xl font-bold mb-4">Localização</h3>
               <div className="aspect-video rounded-lg overflow-hidden bg-muted">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4!2d-48.3558!3d-10.1689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDEwJzA4LjAiUyA0OMKwMjEnMjAuOSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.9768102689961!2d-48.33419208792172!3d-10.278396208495096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b37991fd1e717%3A0xd41754067bb3ac4!2sCi%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%20-%20Ulbra%20Palmas!5e0!3m2!1spt-BR!2sbr!4v1761416483531!5m2!1spt-BR!2sbr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
