@@ -11,16 +11,16 @@ const Inscricao = () => {
           </p>
         </div>
 
-        <Card className="p-4 md:p-8">
-          <div className="aspect-video w-full min-h-[1400px]">
+        <Card className="p-4 md:p-8 bg-card/50 backdrop-blur-sm">
+          <div className="w-full">
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSeTEhuMZF688AgllkEo_cfvxL1Dvi9vWofSmeyVyJan-YCaMw/viewform?embedded=true"
-              width="110%"
-              height="1400"
+              width="100%"
+              height="1800"
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
-              className="w-full h-[1300px] rounded-lg"
+              className="w-full min-h-[1800px] rounded-lg"
             >
               Carregando…
             </iframe>
