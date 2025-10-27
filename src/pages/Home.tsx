@@ -10,21 +10,21 @@ const Home = () => {
   const courses = [
     {
       id: 1,
-      title: "Desvendando a lógica com Prolog",
-      description: "Aprenda os fundamentos da programação lógica",
-      icon: "🧩",
+      title: "Programação em C++",
+      description: "Aprenda os fundamentos de C++, uma linguagem poderosa",
+      icon: "⚡",
     },
     {
       id: 2,
-      title: "Python para Iniciantes",
-      description: "Dê seus primeiros passos no mundo da programação",
-      icon: "🐍",
+      title: "JavaScript Essencial",
+      description: "Domine JavaScript e crie aplicações web interativas",
+      icon: "⚛️",
     },
     {
       id: 3,
-      title: "Programação em C++",
-      description: "Domine uma das linguagens mais poderosas",
-      icon: "⚡",
+      title: "Programação Funcional com Elixir",
+      description: "Explore o mundo da programação funcional com Elixir",
+      icon: "💧",
     },
   ];
 

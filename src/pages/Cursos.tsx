@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Clock, User } from "lucide-react";
+import { LogoFlashClip } from "@/components/LogoFlashClip";
 
 const Cursos = () => {
   const courses = [
@@ -78,7 +79,9 @@ const Cursos = () => {
               className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
             >
               <div className="flex items-start justify-between mb-4">
-                <span className="text-5xl">{course.icon}</span>
+                <div className="w-16 h-16">
+                  <LogoFlashClip variant="icon" size="lg" rounded />
+                </div>
                 <span className="text-xs font-medium px-3 py-1 rounded-full bg-primary/20 text-primary">
                   {course.category}
                 </span>
