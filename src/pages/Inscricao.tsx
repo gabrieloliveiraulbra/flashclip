@@ -12,7 +12,7 @@ const Inscricao = () => {
         </div>
 
         <Card className="p-4 md:p-8">
-          <div className="aspect-video w-full min-h-[1400px]">
+          <div className="aspect-video w-full min-h-[1300px]">
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSeTEhuMZF688AgllkEo_cfvxL1Dvi9vWofSmeyVyJan-YCaMw/viewform?embedded=true"
               width="110%"
