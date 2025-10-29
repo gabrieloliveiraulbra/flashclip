@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Instagram, Globe } from "lucide-react";
+import { LogoFlashClip } from "@/components/LogoFlashClip";
 
 const Patrocinadores = () => {
   const [filter, setFilter] = useState("todos");
@@ -125,7 +126,9 @@ const Patrocinadores = () => {
               className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
             >
               <div className="flex flex-col h-full">
-                <div className="text-6xl mb-4 text-center">{sponsor.logo}</div>
+                <div className="flex justify-center mb-4">
+                  <LogoFlashClip variant="icon" size="lg" rounded />
+                </div>
 
                 <h3 className="text-xl font-bold mb-2 text-center">
                   {sponsor.name}

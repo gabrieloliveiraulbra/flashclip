@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { GraduationCap } from "lucide-react";
+import { LogoFlashClip } from "@/components/LogoFlashClip";
 
 const Instrutores = () => {
   const instructors = [
@@ -49,8 +49,8 @@ const Instrutores = () => {
               key={index}
               className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300 text-center"
             >
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-secondary mx-auto mb-4 flex items-center justify-center glow-neon">
-                <GraduationCap size={40} className="text-background" />
+              <div className="flex justify-center mb-4">
+                <LogoFlashClip variant="icon" size="lg" rounded />
               </div>
 
               <h3 className="text-lg font-bold mb-2">{instructor.name}</h3>
