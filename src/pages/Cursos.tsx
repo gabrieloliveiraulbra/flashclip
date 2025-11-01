@@ -1,7 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Clock, User } from "lucide-react";
-import { LogoFlashClip } from "@/components/LogoFlashClip";
+import cppIcon from "@/assets/languages/cpp.png";
+import jsIcon from "@/assets/languages/javascript.png";
+import elixirIcon from "@/assets/languages/elixir.png";
+import phpIcon from "@/assets/languages/php.png";
+import prologIcon from "@/assets/languages/prolog.png";
 
 const Cursos = () => {
   const courses = [
@@ -14,7 +18,7 @@ const Cursos = () => {
       duration: "3 horas",
       instructors: ["JOÃO VITOR ARAUJO", "EDOARDO", "GUILHERME MOREIRA", "ARTUR MURADA", "NICOLLAS", "VINICIUS FELIPE"],
       prerequisite: "Nenhum",
-      icon: "⚡",
+      image: cppIcon,
     },
     {
       id: 2,
@@ -25,7 +29,7 @@ const Cursos = () => {
       duration: "3 horas",
       instructors: ["LUIZ ARTHUR", "GUILHERME MOTTA", "GABRIEL LOPES", "MATHEUS CARVALHO", "THIAGO SILVA", "SAMUEL ABADE"],
       prerequisite: "Nenhum",
-      icon: "⚛️",
+      image: jsIcon,
     },
     {
       id: 3,
@@ -36,7 +40,7 @@ const Cursos = () => {
       duration: "3 horas",
       instructors: ["GABRIEL", "KARINY FERREIRA", "FELIPE SOUSA", "ANA CAROLINA", "LARISSA", "DEBORAH"],
       prerequisite: "Nenhum",
-      icon: "💧",
+      image: elixirIcon,
     },
     {
       id: 4,
@@ -47,7 +51,7 @@ const Cursos = () => {
       duration: "3 horas",
       instructors: ["LUCAS LEAL", "JONAS", "IGOR", "SAMUEL MATSUKAMI", "EDUARDO"],
       prerequisite: "Nenhum",
-      icon: "🐘",
+      image: phpIcon,
     },
     {
       id: 5,
@@ -58,7 +62,7 @@ const Cursos = () => {
       duration: "3 horas",
       instructors: ["ANA LARESSA", "TAYLANNE", "JOAO PEDRO", "DANIEL MARTINS", "RODRIGO FOLHA"],
       prerequisite: "Nenhum",
-      icon: "🧩",
+      image: prologIcon,
     },
   ];
 
@@ -79,8 +83,12 @@ const Cursos = () => {
               className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="w-16 h-16">
-                  <LogoFlashClip variant="icon" size="lg" rounded />
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <img 
+                    src={course.image} 
+                    alt={`${course.category} logo`}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <span className="text-xs font-medium px-3 py-1 rounded-full bg-primary/20 text-primary">
                   {course.category}
