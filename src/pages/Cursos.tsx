@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Clock, User } from "lucide-react";
+import { Link } from "react-router-dom";
 import cppIcon from "@/assets/languages/cpp.png";
 import jsIcon from "@/assets/languages/javascript.png";
 import elixirIcon from "@/assets/languages/elixir.png";
@@ -124,7 +125,9 @@ const Cursos = () => {
                 </div>
               </div>
 
-              <Button className="w-full">Ver Detalhes</Button>
+              <Link to="/inscricao" className="w-full">
+                <Button className="w-full">Inscreva-se</Button>
+              </Link>
             </Card>
           ))}
         </div>
