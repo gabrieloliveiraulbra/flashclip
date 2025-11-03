@@ -27,8 +27,8 @@ const Instrutores = () => {
       { name: "GABRIEL", photo: "https://i.ibb.co/GvtdHLdv/gabriel.png" },
       { name: "KARINY FERREIRA", photo: "https://i.ibb.co/xKjf724b/kariny-ferreira.png" },
       { name: "FELIPE SOUSA", photo: "https://i.ibb.co/4wgpCvx5/felipe-sousa.png" },
-      { name: "ANA CAROLINA", photo: "" },
-      { name: "LARISSA", photo: "" },
+      { name: "ANA CAROLINA", photo: "https://i.ibb.co/ynXBZvG4/ana-carolina.jpg" },
+      { name: "LARISSA", photo: "https://i.ibb.co/WNPPDfvb/larissa.jpg" },
       { name: "DEBORAH", photo: "https://i.ibb.co/MxvCdrm6/deborah.png" },
     ],
     "PHP": [
