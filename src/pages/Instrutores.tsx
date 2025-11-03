@@ -8,42 +8,42 @@ import prologIcon from "@/assets/languages/prolog.png";
 const Instrutores = () => {
   const instructorsByLanguage = {
     "C++": [
-      { name: "JOÃO VITOR ARAUJO", photo: "joao-vitor.png" },
-      { name: "EDOARDO", photo: "edoardo.png" },
-      { name: "GUILHERME MOREIRA", photo: "guilherme-moreira.png" },
-      { name: "ARTUR MURADA", photo: "artur-murada.png" },
-      { name: "NICOLLAS", photo: "nicollas.png" },
-      { name: "VINICIUS FELIPE", photo: "vinicius-felipe.png" },
+      { name: "JOÃO VITOR ARAUJO", photo: "" },
+      { name: "EDOARDO", photo: "" },
+      { name: "GUILHERME MOREIRA", photo: "" },
+      { name: "ARTUR MURADA", photo: "" },
+      { name: "NICOLLAS", photo: "" },
+      { name: "VINICIUS FELIPE", photo: "" },
     ],
     "JavaScript": [
-      { name: "LUIZ ARTHUR", photo: "luiz-arthur.png" },
-      { name: "GUILHERME MOTTA", photo: "guilherme-motta.png" },
-      { name: "GABRIEL LOPES", photo: "gabriel-lopes.png" },
-      { name: "MATHEUS CARVALHO", photo: "matheus-carvalho.png" },
-      { name: "THIAGO SILVA", photo: "thiago-silva.png" },
-      { name: "SAMUEL ABADE", photo: "samuel-abade.png" },
+      { name: "LUIZ ARTHUR", photo: "" },
+      { name: "GUILHERME MOTTA", photo: "" },
+      { name: "GABRIEL LOPES", photo: "" },
+      { name: "MATHEUS CARVALHO", photo: "" },
+      { name: "THIAGO SILVA", photo: "" },
+      { name: "SAMUEL ABADE", photo: "" },
     ],
     "Elixir": [
-      { name: "GABRIEL", photo: "gabriel.png" },
-      { name: "KARINY FERREIRA", photo: "kariny-ferreira.png" },
-      { name: "FELIPE SOUSA", photo: "felipe-sousa.png" },
-      { name: "ANA CAROLINA", photo: "ana-carolina.png" },
-      { name: "LARISSA", photo: "larissa.png" },
-      { name: "DEBORAH", photo: "deborah.png" },
+      { name: "GABRIEL", photo: "https://i.ibb.co/GvtdHLdv/gabriel.png" },
+      { name: "KARINY FERREIRA", photo: "https://i.ibb.co/xKjf724b/kariny-ferreira.png" },
+      { name: "FELIPE SOUSA", photo: "https://i.ibb.co/4wgpCvx5/felipe-sousa.png" },
+      { name: "ANA CAROLINA", photo: "" },
+      { name: "LARISSA", photo: "" },
+      { name: "DEBORAH", photo: "https://i.ibb.co/MxvCdrm6/deborah.png" },
     ],
     "PHP": [
-      { name: "LUCAS LEAL", photo: "lucas-leal.png" },
-      { name: "JONAS", photo: "jonas.png" },
-      { name: "IGOR", photo: "igor.png" },
-      { name: "SAMUEL MATSUKAMI", photo: "samuel-matsukami.png" },
-      { name: "EDUARDO", photo: "eduardo.png" },
+      { name: "LUCAS LEAL", photo: "https://i.ibb.co/YrX3Tf7/lucas-leal.png" },
+      { name: "JONAS", photo: "https://i.ibb.co/PZmfRx83/jonas.png" },
+      { name: "IGOR", photo: "https://i.ibb.co/277rktvn/igor.png" },
+      { name: "SAMUEL MATSUKAMI", photo: "https://i.ibb.co/hxPqYkzP/samuel-matsukami.png" },
+      { name: "EDUARDO", photo: "https://i.ibb.co/KpZ7cyMr/eduardo.png" },
     ],
     "Prolog": [
-      { name: "ANA LARESSA", photo: "ana-laressa.png" },
-      { name: "TAYLANNE", photo: "taylanne.png" },
-      { name: "JOAO PEDRO", photo: "joao-pedro.png" },
-      { name: "DANIEL MARTINS", photo: "daniel-martins.png" },
-      { name: "RODRIGO FOLHA", photo: "rodrigo-folha.png" },
+      { name: "ANA LARESSA", photo: "https://i.ibb.co/7dQwq61r/ana-laressa.png" },
+      { name: "TAYLANNE", photo: "https://i.ibb.co/Y7f6qbNH/taylanne.png" },
+      { name: "JOAO PEDRO", photo: "" },
+      { name: "DANIEL MARTINS", photo: "https://i.ibb.co/93mFMYPX/daniel-martins.png" },
+      { name: "RODRIGO FOLHA", photo: "https://i.ibb.co/VWKZndkT/rodrigo-folha.png" },
     ],
   };
 
@@ -87,13 +87,12 @@ const Instrutores = () => {
                   >
                     <div className="flex justify-center mb-4">
                       <div className="w-24 h-24 rounded-full bg-card border-2 border-primary/20 flex items-center justify-center overflow-hidden">
-                        {/* Substitua [NOME_DA_FOTO] pelo nome real do arquivo na pasta src/assets/instructors/ */}
                         <img 
-                          src={`/src/assets/instructors/${instructor.photo}`}
+                          src={instructor.photo || languageIcons[language]}
                           alt={instructor.name}
-                          className="w-full h-full object-cover"
+                          className={instructor.photo ? "w-full h-full object-cover" : "w-16 h-16 object-contain"}
+                          loading="lazy"
                           onError={(e) => {
-                            // Fallback para quando a foto não existir
                             e.currentTarget.src = languageIcons[language];
                             e.currentTarget.className = "w-16 h-16 object-contain";
                           }}
