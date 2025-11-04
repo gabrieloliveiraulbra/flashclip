@@ -8,12 +8,12 @@ import prologIcon from "@/assets/languages/prolog.png";
 const Instrutores = () => {
   const instructorsByLanguage = {
     "C++": [
-      { name: "JOÃO VITOR ARAUJO", photo: "" },
-      { name: "EDOARDO", photo: "" },
-      { name: "GUILHERME MOREIRA", photo: "" },
-      { name: "ARTUR MURADA", photo: "" },
-      { name: "NICOLLAS", photo: "" },
-      { name: "VINICIUS FELIPE", photo: "" },
+      { name: "JOÃO VITOR ARAUJO", photo: "https://i.ibb.co/ch8GcLS3/joao.png" },
+      { name: "EDOARDO", photo: "https://i.ibb.co/20gtyCWX/edoardo-tombolesi.png" },
+      { name: "GUILHERME MOREIRA", photo: "https://i.ibb.co/ymShqJbL/guilherme-moreira.png" },
+      { name: "ARTUR MURADA", photo: "https://i.ibb.co/01WP1fL/artur.png" },
+      { name: "NICOLLAS", photo: "https://i.ibb.co/yFgPvbmr/nicollas-souza.png" },
+      { name: "VINICIUS FELIPE", photo: "https://i.ibb.co/kVHvV5fM/vinicius-felipe.png" },
     ],
     "JavaScript": [
       { name: "LUIZ ARTHUR", photo: "" },
