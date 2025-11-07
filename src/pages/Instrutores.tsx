@@ -16,12 +16,12 @@ const Instrutores = () => {
       { name: "VINICIUS FELIPE", photo: "https://i.ibb.co/kVHvV5fM/vinicius-felipe.png" },
     ],
     "JavaScript": [
-      { name: "LUIZ ARTHUR", photo: "" },
-      { name: "GUILHERME MOTTA", photo: "" },
-      { name: "GABRIEL LOPES", photo: "" },
-      { name: "MATHEUS CARVALHO", photo: "" },
-      { name: "THIAGO SILVA", photo: "" },
-      { name: "SAMUEL ABADE", photo: "" },
+      { name: "LUIZ ARTHUR", photo: "https://i.ibb.co/bMvcpgTv/luis-cabral.jpg" },
+      { name: "GUILHERME MOTTA", photo: "https://i.ibb.co/GQSPJZCL/guilherme-silva.jpg" },
+      { name: "GABRIEL LOPES", photo: "https://i.ibb.co/PsBDsxvL/gabriel-lopes.jpg" },
+      { name: "MATHEUS CARVALHO", photo: "https://i.ibb.co/B5qs67rL/matheus-carvalho.jpg" },
+      { name: "THIAGO SILVA", photo: "https://i.ibb.co/23N1L7J1/tiago-silva.jpg" },
+      { name: "SAMUEL ABADE", photo: "https://i.ibb.co/LzXQrmZb/samuel-abade.jpg" },
     ],
     "Elixir": [
       { name: "GABRIEL", photo: "https://i.ibb.co/GvtdHLdv/gabriel.png" },
@@ -41,7 +41,6 @@ const Instrutores = () => {
     "Prolog": [
       { name: "ANA LARESSA", photo: "https://i.ibb.co/7dQwq61r/ana-laressa.png" },
       { name: "TAYLANNE", photo: "https://i.ibb.co/Y7f6qbNH/taylanne.png" },
-      { name: "JOAO PEDRO", photo: "" },
       { name: "DANIEL MARTINS", photo: "https://i.ibb.co/93mFMYPX/daniel-martins.png" },
       { name: "RODRIGO FOLHA", photo: "https://i.ibb.co/VWKZndkT/rodrigo-folha.png" },
     ],
