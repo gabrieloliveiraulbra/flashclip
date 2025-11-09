@@ -5,6 +5,9 @@ import Countdown from "@/components/Countdown";
 import { Award, BookOpen, Clock, Users } from "lucide-react";
 import { LogoFlashClip } from "@/components/LogoFlashClip";
 import { StarryBackground } from "@/components/StarryBackground";
+import cppIcon from "@/assets/languages/cpp.png";
+import jsIcon from "@/assets/languages/javascript.png";
+import elixirIcon from "@/assets/languages/elixir.png";
 
 const Home = () => {
   const courses = [
@@ -12,19 +15,19 @@ const Home = () => {
       id: 1,
       title: "Programação em C++",
       description: "Aprenda os fundamentos de C++, uma linguagem poderosa",
-      icon: "⚡",
+      image: cppIcon,
     },
     {
       id: 2,
       title: "JavaScript Essencial",
       description: "Domine JavaScript e crie aplicações web interativas",
-      icon: "⚛️",
+      image: jsIcon,
     },
     {
       id: 3,
       title: "Programação Funcional com Elixir",
       description: "Explore o mundo da programação funcional com Elixir",
-      icon: "💧",
+      image: elixirIcon,
     },
   ];
 
@@ -153,12 +156,18 @@ const Home = () => {
                 key={course.id}
                 className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
               >
-                <div className="text-5xl mb-4">{course.icon}</div>
+                <div className="w-20 h-20 flex items-center justify-center mb-4 mx-auto">
+                  <img 
+                    src={course.image} 
+                    alt={`${course.title} logo`}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <h3 className="text-xl font-bold mb-2">{course.title}</h3>
                 <p className="text-muted-foreground mb-4">{course.description}</p>
                 <Link to="/cursos">
                   <Button variant="outline" className="w-full">
-                    Ver Detalhes
+                    Ver Cursos
                   </Button>
                 </Link>
               </Card>

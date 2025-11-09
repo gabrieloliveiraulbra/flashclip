@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="group">
-            <LogoFlashClip variant="full" size="sm" />
+            <LogoFlashClip variant="full" size="md" />
           </Link>
 
           {/* Desktop Navigation */}

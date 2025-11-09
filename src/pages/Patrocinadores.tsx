@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Instagram, Globe } from "lucide-react";
-import { LogoFlashClip } from "@/components/LogoFlashClip";
 
 const Patrocinadores = () => {
   const [filter, setFilter] = useState("todos");
@@ -13,7 +12,7 @@ const Patrocinadores = () => {
       tier: "diamante",
       description:
         "Líder em soluções de tecnologia empresarial com foco em transformação digital",
-      logo: "💎",
+      logo: "https://via.placeholder.com/150/0000FF/FFFFFF?text=TechCorp",
       website: "https://techcorp.com",
       instagram: "@techcorp",
     },
@@ -22,7 +21,7 @@ const Patrocinadores = () => {
       tier: "diamante",
       description:
         "Plataforma de ensino de programação com milhares de alunos formados",
-      logo: "🚀",
+      logo: "https://via.placeholder.com/150/FF0000/FFFFFF?text=CodeHub",
       website: "https://codehub.com.br",
       instagram: "@codehub_br",
     },
@@ -31,7 +30,7 @@ const Patrocinadores = () => {
       tier: "prata",
       description:
         "Ferramentas de desenvolvimento que impulsionam a produtividade",
-      logo: "🛠️",
+      logo: "https://via.placeholder.com/150/C0C0C0/000000?text=DevTools",
       website: "https://devtools.io",
       instagram: "@devtools",
     },
@@ -39,7 +38,7 @@ const Patrocinadores = () => {
       name: "CloudStack",
       tier: "prata",
       description: "Infraestrutura em nuvem de alta performance",
-      logo: "☁️",
+      logo: "https://via.placeholder.com/150/C0C0C0/000000?text=CloudStack",
       website: "https://cloudstack.com",
       instagram: "@cloudstack",
     },
@@ -47,7 +46,7 @@ const Patrocinadores = () => {
       name: "DataFlow Analytics",
       tier: "prata",
       description: "Análise de dados e business intelligence",
-      logo: "📊",
+      logo: "https://via.placeholder.com/150/C0C0C0/000000?text=DataFlow",
       website: "https://dataflow.com",
       instagram: "@dataflow",
     },
@@ -55,7 +54,7 @@ const Patrocinadores = () => {
       name: "ByteCafe",
       tier: "bronze",
       description: "Cafeteria especializada para desenvolvedores",
-      logo: "☕",
+      logo: "https://via.placeholder.com/150/CD7F32/FFFFFF?text=ByteCafe",
       website: "https://bytecafe.com.br",
       instagram: "@bytecafe",
     },
@@ -63,7 +62,7 @@ const Patrocinadores = () => {
       name: "CodeBooks",
       tier: "bronze",
       description: "Editora especializada em livros de programação",
-      logo: "📚",
+      logo: "https://via.placeholder.com/150/CD7F32/FFFFFF?text=CodeBooks",
       website: "https://codebooks.com.br",
       instagram: "@codebooks",
     },
@@ -71,7 +70,7 @@ const Patrocinadores = () => {
       name: "GamerDev Studios",
       tier: "bronze",
       description: "Estúdio de desenvolvimento de jogos indie",
-      logo: "🎮",
+      logo: "https://via.placeholder.com/150/CD7F32/FFFFFF?text=GamerDev",
       website: "https://gamerdev.com",
       instagram: "@gamerdev",
     },
@@ -127,7 +126,14 @@ const Patrocinadores = () => {
             >
               <div className="flex flex-col h-full">
                 <div className="flex justify-center mb-4">
-                  <LogoFlashClip variant="icon" size="lg" rounded />
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-primary/20">
+                    <img 
+                      src={sponsor.logo} 
+                      alt={`${sponsor.name} logo`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
 
                 <h3 className="text-xl font-bold mb-2 text-center">
