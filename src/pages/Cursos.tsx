@@ -50,7 +50,7 @@ const Cursos = () => {
       description:
         "Aprenda PHP e construa aplicações web dinâmicas e poderosas.",
       duration: "3 horas",
-      instructors: ["LUCAS LEAL", "JONAS", "IGOR", "SAMUEL MATSUKAMI", "EDUARDO"],
+      instructors: ["Lucas LEAL", "JONAS", "IGOR", "SAMUEL MATSUKAMI", "EDUARDO"],
       prerequisite: "Nenhum",
       image: phpIcon,
     },
@@ -111,11 +111,17 @@ const Cursos = () => {
                 <div className="flex items-start gap-2 text-muted-foreground">
                   <User size={16} className="text-primary mt-0.5" />
                   <div className="flex flex-wrap gap-1">
-                    {course.instructors.map((instructor, idx) => (
-                      <span key={idx}>
-                        {instructor}
-                        {idx < course.instructors.length - 1 && ","}
-                      </span>
+                    {course.instructors
+                      .map(name =>
+                        name
+                          .toLowerCase()
+                          .replace(/\b\w/g, (c) => c.toUpperCase())
+                      )
+                      .map((instructor, idx) => (
+                        <span key={idx}>
+                          {instructor}
+                          {idx < course.instructors.length - 1 && ","}
+                        </span>
                     ))}
                   </div>
                 </div>
