@@ -9,71 +9,13 @@ const Patrocinadores = () => {
   const sponsors = [
     {
       name: "TechCorp Solutions",
-      tier: "diamante",
+      tier: "prata",
       description:
         "Líder em soluções de tecnologia empresarial com foco em transformação digital",
-      logo: "https://via.placeholder.com/150/0000FF/FFFFFF?text=TechCorp",
-      website: "https://techcorp.com",
-      instagram: "@techcorp",
-    },
-    {
-      name: "CodeHub Brasil",
-      tier: "diamante",
-      description:
-        "Plataforma de ensino de programação com milhares de alunos formados",
-      logo: "https://via.placeholder.com/150/FF0000/FFFFFF?text=CodeHub",
-      website: "https://codehub.com.br",
-      instagram: "@codehub_br",
-    },
-    {
-      name: "DevTools Inc",
-      tier: "prata",
-      description:
-        "Ferramentas de desenvolvimento que impulsionam a produtividade",
-      logo: "https://via.placeholder.com/150/C0C0C0/000000?text=DevTools",
-      website: "https://devtools.io",
-      instagram: "@devtools",
-    },
-    {
-      name: "CloudStack",
-      tier: "prata",
-      description: "Infraestrutura em nuvem de alta performance",
-      logo: "https://via.placeholder.com/150/C0C0C0/000000?text=CloudStack",
-      website: "https://cloudstack.com",
-      instagram: "@cloudstack",
-    },
-    {
-      name: "DataFlow Analytics",
-      tier: "prata",
-      description: "Análise de dados e business intelligence",
-      logo: "https://via.placeholder.com/150/C0C0C0/000000?text=DataFlow",
-      website: "https://dataflow.com",
-      instagram: "@dataflow",
-    },
-    {
-      name: "ByteCafe",
-      tier: "bronze",
-      description: "Cafeteria especializada para desenvolvedores",
-      logo: "https://via.placeholder.com/150/CD7F32/FFFFFF?text=ByteCafe",
-      website: "https://bytecafe.com.br",
-      instagram: "@bytecafe",
-    },
-    {
-      name: "CodeBooks",
-      tier: "bronze",
-      description: "Editora especializada em livros de programação",
-      logo: "https://via.placeholder.com/150/CD7F32/FFFFFF?text=CodeBooks",
-      website: "https://codebooks.com.br",
-      instagram: "@codebooks",
-    },
-    {
-      name: "GamerDev Studios",
-      tier: "bronze",
-      description: "Estúdio de desenvolvimento de jogos indie",
-      logo: "https://via.placeholder.com/150/CD7F32/FFFFFF?text=GamerDev",
-      website: "https://gamerdev.com",
-      instagram: "@gamerdev",
-    },
+      logo: "https://i.ibb.co/RGxhcB04/posto-ipanema.png",
+      website: "",
+      instagram: "postoipanemapmw",
+    }
   ];
 
   const filteredSponsors =
