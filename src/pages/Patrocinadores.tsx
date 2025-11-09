@@ -118,19 +118,19 @@ const Patrocinadores = () => {
         </div>
 
         {/* Sponsors Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredSponsors.map((sponsor, index) => (
             <Card
               key={index}
               className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
             >
               <div className="flex flex-col h-full">
-                <div className="flex justify-center mb-4">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-primary/20">
+                <div className="flex justify-center items-center mb-4 h-[150px]">
+                  <div className="w-[150px] h-[150px] flex items-center justify-center">
                     <img 
                       src={sponsor.logo} 
                       alt={`${sponsor.name} logo`}
-                      className="w-full h-full object-cover"
+                      className="max-w-full max-h-full object-contain"
                       loading="lazy"
                     />
                   </div>
