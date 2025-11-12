@@ -98,7 +98,7 @@ const Home = () => {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            📍 Local: Ulbra Palmas, TO | 📅 Data: 22/11/2025 às 14h
+            📍 Local: Ulbra Palmas, TO | 📅 Data: 29/11/2025 às 14h
           </p>
         </div>
       </section>

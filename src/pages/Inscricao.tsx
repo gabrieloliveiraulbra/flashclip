@@ -18,7 +18,7 @@ const Inscricao = () => {
               width="100%"
               height="2200"
               frameBorder="0"
-              className="w-full h-[1580px] rounded-lg"
+              className="w-full h-[1730px] rounded-lg"
             >
               Carregando…
             </iframe>

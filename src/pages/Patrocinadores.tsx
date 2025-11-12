@@ -8,10 +8,10 @@ const Patrocinadores = () => {
 
   const sponsors = [
     {
-      name: "TechCorp Solutions",
+      name: "Posto Ipanema",
       tier: "prata",
       description:
-        "Líder em soluções de tecnologia empresarial com foco em transformação digital",
+        " ",
       logo: "https://i.ibb.co/RGxhcB04/posto-ipanema.png",
       website: "",
       instagram: "postoipanemapmw",
