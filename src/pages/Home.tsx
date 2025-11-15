@@ -157,11 +157,13 @@ const Home = () => {
             {courses.map((course) => (
               <Card
                 key={course.id}
-                className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300 relative"
+                className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
               >
                 {course.soldOut && (
-                  <div className="absolute top-4 right-4 bg-[#E53935] text-white font-bold text-xs px-3 py-1.5 rounded-md shadow-lg z-10">
-                    ESGOTADO
+                  <div className="mb-4 flex justify-center">
+                    <span className="text-xs font-medium px-3 py-1 rounded-full bg-red-500/20 text-red-500">
+                      ESGOTADO
+                    </span>
                   </div>
                 )}
                 <div className="w-20 h-20 flex items-center justify-center mb-4 mx-auto">
