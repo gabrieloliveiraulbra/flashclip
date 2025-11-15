@@ -20,6 +20,7 @@ const Cursos = () => {
       instructors: ["JOÃO VITOR ARAUJO", "EDOARDO", "GUILHERME MOREIRA", "ARTUR MURADA", "NICOLLAS", "VINICIUS FELIPE"],
       prerequisite: "Nenhum",
       image: cppIcon,
+      soldOut: false,
     },
     {
       id: 2,
@@ -31,6 +32,7 @@ const Cursos = () => {
       instructors: ["LUIZ ARTHUR", "GUILHERME MOTTA", "GABRIEL LOPES", "MATHEUS CARVALHO", "THIAGO SILVA", "SAMUEL ABADE"],
       prerequisite: "Nenhum",
       image: jsIcon,
+      soldOut: false,
     },
     {
       id: 3,
@@ -42,6 +44,7 @@ const Cursos = () => {
       instructors: ["GABRIEL", "KARINY FERREIRA", "FELIPE SOUSA", "ANA CAROLINA", "LARISSA", "DEBORAH"],
       prerequisite: "Nenhum",
       image: elixirIcon,
+      soldOut: false,
     },
     {
       id: 4,
@@ -53,6 +56,7 @@ const Cursos = () => {
       instructors: ["Lucas LEAL", "JONAS", "IGOR", "SAMUEL MATSUKAMI", "EDUARDO"],
       prerequisite: "Nenhum",
       image: phpIcon,
+      soldOut: false,
     },
     {
       id: 5,
@@ -64,6 +68,7 @@ const Cursos = () => {
       instructors: ["ANA LARESSA", "TAYLANNE", "JOAO PEDRO", "DANIEL MARTINS", "RODRIGO FOLHA"],
       prerequisite: "Nenhum",
       image: prologIcon,
+      soldOut: false,
     },
   ];
 
@@ -81,8 +86,13 @@ const Cursos = () => {
           {courses.map((course) => (
             <Card
               key={course.id}
-              className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
+              className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300 relative"
             >
+              {course.soldOut && (
+                <div className="absolute top-4 right-4 bg-[#E53935] text-white font-bold text-xs px-3 py-1.5 rounded-md shadow-lg z-10">
+                  ESGOTADO
+                </div>
+              )}
               <div className="flex items-start justify-between mb-4">
                 <div className="w-16 h-16 flex items-center justify-center">
                   <img 
