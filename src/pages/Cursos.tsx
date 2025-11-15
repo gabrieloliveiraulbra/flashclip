@@ -96,15 +96,16 @@ const Cursos = () => {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                {course.soldOut ? (
-                  <span className="text-xs font-medium px-3 py-1 rounded-full bg-red-500/20 text-red-500">
-                    ESGOTADO
-                  </span>
-                ) : (
+                <div className="flex items-center gap-2 flex-wrap justify-end">
                   <span className="text-xs font-medium px-3 py-1 rounded-full bg-primary/20 text-primary">
                     {course.category}
                   </span>
-                )}
+                  {course.soldOut && (
+                    <span className="text-xs font-medium px-3 py-1 rounded-full bg-red-500/20 text-red-500">
+                      ESGOTADO
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div className="card-uniform-content">
