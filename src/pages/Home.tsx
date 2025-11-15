@@ -16,18 +16,21 @@ const Home = () => {
       title: "Programação em C++",
       description: "Aprenda os fundamentos de C++, uma linguagem poderosa",
       image: cppIcon,
+      soldOut: false,
     },
     {
       id: 2,
       title: "JavaScript Essencial",
       description: "Domine JavaScript e crie aplicações web interativas",
       image: jsIcon,
+      soldOut: false,
     },
     {
       id: 3,
       title: "Programação Funcional com Elixir",
       description: "Explore o mundo da programação funcional com Elixir",
       image: elixirIcon,
+      soldOut: false,
     },
   ];
 
@@ -154,8 +157,13 @@ const Home = () => {
             {courses.map((course) => (
               <Card
                 key={course.id}
-                className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300"
+                className="card-uniform p-6 hover:border-primary hover:glow-neon hover:scale-[1.03] transition-all duration-300 relative"
               >
+                {course.soldOut && (
+                  <div className="absolute top-4 right-4 bg-[#E53935] text-white font-bold text-xs px-3 py-1.5 rounded-md shadow-lg z-10">
+                    ESGOTADO
+                  </div>
+                )}
                 <div className="w-20 h-20 flex items-center justify-center mb-4 mx-auto">
                   <img 
                     src={course.image} 
