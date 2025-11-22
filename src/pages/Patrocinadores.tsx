@@ -8,6 +8,15 @@ const Patrocinadores = () => {
 
   const sponsors = [
     {
+      name: "SUA Internet",
+      tier: "diamante",
+      description:
+        "Sua Internet é uma empresa de internet que oferece serviços de internet para residências e empresas.",
+      logo: "https://i.ibb.co/nqCT8t9f/Logo.png",
+      website: "https://suainternet.com.br/",
+      instagram: "suainternet",
+    },
+    {
       name: "Posto Ipanema",
       tier: "prata",
       description:
