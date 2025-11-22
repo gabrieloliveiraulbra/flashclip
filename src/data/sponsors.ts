@@ -20,7 +20,7 @@ export const sponsors: Sponsor[] = [
   {
     name: "Posto Ipanema",
     tier: "prata",
-    description: " ",
+    description: "Posto de combustível e serviços: troca de óleo, loja de conveniência e calibragem de pneus",
     logo: "https://i.ibb.co/RGxhcB04/posto-ipanema.png",
     website: "",
     instagram: "postoipanemapmw",
