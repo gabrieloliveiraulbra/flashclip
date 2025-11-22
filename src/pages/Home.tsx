@@ -8,6 +8,7 @@ import { StarryBackground } from "@/components/StarryBackground";
 import cppIcon from "@/assets/languages/cpp.png";
 import jsIcon from "@/assets/languages/javascript.png";
 import elixirIcon from "@/assets/languages/elixir.png";
+import { sponsors } from "@/data/sponsors";
 
 const Home = () => {
   const courses = [
@@ -111,14 +112,24 @@ const Home = () => {
         <div className="container mx-auto">
           <h2 className="text-center mb-12 text-gradient">Nossos Parceiros</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {[1, 2, 3, 4].map((i) => (
-              <div
-                key={i}
-                className="aspect-square rounded-full bg-muted border-2 border-border hover:border-primary hover:glow-neon transition-all duration-300 flex items-center justify-center"
-              >
-                <span className="text-4xl">🏢</span>
-              </div>
-            ))}
+            {sponsors
+              .filter((sponsor) => sponsor.tier === "diamante")
+              .map((sponsor, index) => (
+                <a
+                  key={index}
+                  href={sponsor.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="aspect-square rounded-full bg-muted border-2 border-border hover:border-primary hover:glow-neon transition-all duration-300 flex items-center justify-center p-6"
+                >
+                  <img
+                    src={sponsor.logo}
+                    alt={`${sponsor.name} logo`}
+                    className="max-w-full max-h-full object-contain"
+                    loading="lazy"
+                  />
+                </a>
+              ))}
           </div>
         </div>
       </section>
