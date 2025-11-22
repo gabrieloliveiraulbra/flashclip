@@ -2,30 +2,10 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Instagram, Globe } from "lucide-react";
+import { sponsors } from "@/data/sponsors";
 
 const Patrocinadores = () => {
   const [filter, setFilter] = useState("todos");
-
-  const sponsors = [
-    {
-      name: "SUA Internet",
-      tier: "diamante",
-      description:
-        "Sua Internet é uma empresa de internet que oferece serviços de internet para residências e empresas.",
-      logo: "https://i.ibb.co/nqCT8t9f/Logo.png",
-      website: "https://suainternet.com.br/",
-      instagram: "suainternet",
-    },
-    {
-      name: "Posto Ipanema",
-      tier: "prata",
-      description:
-        " ",
-      logo: "https://i.ibb.co/RGxhcB04/posto-ipanema.png",
-      website: "",
-      instagram: "postoipanemapmw",
-    }
-  ];
 
   const filteredSponsors =
     filter === "todos"
