@@ -111,7 +111,7 @@ const Home = () => {
       <section className="py-20 px-4 bg-card/50">
         <div className="container mx-auto">
           <h2 className="text-center mb-12 text-gradient">Nossos Parceiros</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
             {sponsors
               .filter((sponsor) => sponsor.tier === "diamante")
               .map((sponsor, index) => (
@@ -120,7 +120,7 @@ const Home = () => {
                   href={sponsor.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="aspect-square rounded-full bg-muted border-2 border-border hover:border-primary hover:glow-neon transition-all duration-300 flex items-center justify-center p-6"
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-muted border-2 border-border hover:border-primary hover:glow-neon transition-all duration-300 flex items-center justify-center p-6"
                 >
                   <img
                     src={sponsor.logo}
