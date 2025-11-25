@@ -25,4 +25,12 @@ export const sponsors: Sponsor[] = [
     website: "",
     instagram: "postoipanemapmw",
   },
+  {
+    name: "CRP Tecnologia",
+    tier: "bronze",
+    description: "CRP Tecnologia, uma empresa de desenvolvimento de software com mais de 18 anos de experiência no mercado nacional e internacional",
+    logo: "https://i.ibb.co/XZxvTy5y/CRP-TECNOLOGIA.png",
+    website: "https://crptecnologia.com.br/",
+    instagram: "crptecnologia",
+  },
 ];
