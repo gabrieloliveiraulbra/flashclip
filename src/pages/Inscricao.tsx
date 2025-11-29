@@ -1,42 +1,35 @@
 import { Card } from "@/components/ui/card";
+import { CheckCircle2 } from "lucide-react";
 
 const Inscricao = () => {
   return (
     <div className="min-h-screen pt-24 pb-12 px-4">
-      <div className="container mx-auto max-w-3xl">
+      <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h1 className="text-gradient mb-4">Inscreva-se</h1>
-          <p className="text-xl text-muted-foreground">
-            Preencha o formulário abaixo para garantir sua vaga
-          </p>
+          <h1 className="text-gradient mb-4">Inscrições</h1>
         </div>
 
-        <Card className="p-4 md:p-8">
-          <div className="w-full overflow-hidden">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeTEhuMZF688AgllkEo_cfvxL1Dvi9vWofSmeyVyJan-YCaMw/viewform?embedded=true"
-              width="100%"
-              height="2200"
-              frameBorder="0"
-              className="w-full h-[1730px] rounded-lg"
-            >
-              Carregando…
-            </iframe>
+        <Card className="p-8 md:p-16 bg-card/50 backdrop-blur-sm border-primary/20">
+          <div className="flex flex-col items-center justify-center text-center space-y-6">
+            <div className="relative">
+              <div className="absolute inset-0 bg-secondary/20 blur-2xl rounded-full"></div>
+              <CheckCircle2 className="w-24 h-24 text-secondary relative z-10" strokeWidth={2} />
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              Inscrições Encerradas!
+            </h2>
+            
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+              As inscrições para o evento foram encerradas. Agradecemos o seu interesse e 
+              esperamos te ver na próxima edição!
+            </p>
+
+            <div className="pt-4 text-sm text-muted-foreground/80">
+              Fique atento às nossas redes sociais para novidades sobre futuros eventos.
+            </div>
           </div>
         </Card>
-
-
-        <div className="mt-8 p-6 bg-card border border-border rounded-lg">
-          <h3 className="text-lg font-bold mb-3 text-primary">
-            ℹ️ Informações da Inscrição
-          </h3>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li>• Inscrições gratuitas e limitadas</li>
-            <li>• Confirmação será enviada por e-mail após o envio</li>
-            <li>• Certificado digital ao final do evento</li>
-            <li>• Vagas limitadas - garanta a sua!</li>
-          </ul>
-        </div>
       </div>
     </div>
   );
